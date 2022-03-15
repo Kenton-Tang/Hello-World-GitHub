@@ -14,22 +14,16 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   my-job:
-    # The type of runner that the job will run on
-
-
-      # Runs a single command using the runners shell
       name: My Job
       runs-on: ubuntu-latest
       
       steps: 
       - name: Print a greeting
-      env: 
-         MY_VAR: Hi there! My name is
-         FIRST_NAME: Mona
-         MIDDLE_NAME: The
-         LAST_NAME: Ocrocat
-
-      # Runs a set of commands using the runners shell
+        env: 
+          MY_VAR: Hi there! My name is
+          FIRST_NAME: Mona
+          MIDDLE_NAME: The
+          LAST_NAME: Ocrocat
 
         run: |
           echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
