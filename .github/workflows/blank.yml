@@ -18,16 +18,16 @@ jobs:
 
 
       # Runs a single command using the runners shell
-      - name: My Job
-        runs-on: ubuntu-latest
+      name: My Job
+      runs-on: ubuntu-latest
       
-        steps: 
-        - name: Print a greeting
-        env: 
-          MY_VAR: Hi there! My name is 
-          FIRST_NAME: Mona
-          MIDDLE_NAME: The
-          LAST_NAME: Ocrocat
+      steps: 
+      - name: Print a greeting
+      env: 
+         MY_VAR: Hi there! My name is
+         FIRST_NAME: Mona
+         MIDDLE_NAME: The
+         LAST_NAME: Ocrocat
 
       # Runs a set of commands using the runners shell
 
